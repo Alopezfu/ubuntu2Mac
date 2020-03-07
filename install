@@ -1,0 +1,26 @@
+#!/bin/bash
+
+sudo apt install gnome-shell gnome-tweak-tool gnome-shell-extension-ubuntu-dock gnome-shell-extensions -y
+[ -d ~/.themes ] || mkdir ~/.themes
+[ -d ~/.background ] || mkdir ~/.background
+[ -d ~/.icons ] || mkdir ~/.icons
+[ -d ~/.fonts ] || mkdir -p ~/.fonts
+cp -r Mojave-theme ~/.themes
+cp -r Mojave-icons ~/.icons
+cp bg.jpg ~/.background
+cp mac-font.ttf ~/.fonts
+gsettings set org.gnome.desktop.background picture-uri  "/home/$USER/.background/bg.jpg"
+gsettings set org.gnome.desktop.interface gtk-theme 'Mojave-theme'
+gsettings set org.gnome.desktop.interface icon-theme  'Mojave-icons'
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme true
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-tab '<Ctrl>q'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-window '<Ctrl>n'
+
+gsettings set org.gnome.desktop.interface document-font-name 'mac-font.ttf 11'
+gsettings set org.gnome.desktop.interface font-name 'mac-font.ttf 11'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 11'
+gsettings set org.gnome.nautilus.desktop font 'mac-font.ttf 11'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'mac-font.ttf 11'
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
