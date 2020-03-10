@@ -3,12 +3,12 @@ Ubuntu desktop like Mac Desktop (GNOME)
 
 You only need run this command in ubnutu2mac folder: 
 
-git clone https://github.com/Alopezfu/ubuntu2Mac.git
+- git clone https://github.com/Alopezfu/ubuntu2Mac.git
 
-cd $_
+- cd $_
 
-chmox +x install
+- chmox +x install
 
-./install
+- ./install
 
-AND Enjoy in 5 seconds!
+***AND Enjoy in 5 seconds!***
