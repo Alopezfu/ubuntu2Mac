@@ -5,9 +5,9 @@ You only need run this command in ubnutu2mac folder:
 
 - git clone https://github.com/Alopezfu/ubuntu2Mac.git
 
-- cd $_
+- cd ubuntu2Mac
 
-- chmox +x install
+- chmod +x install
 
 - ./install
 
