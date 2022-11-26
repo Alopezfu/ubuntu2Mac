@@ -12,5 +12,3 @@ You only need run this command in ubnutu2mac folder:
 - ./install
 
 ***AND Enjoy in 5 seconds!***
-
-![alt img](https://raw.githubusercontent.com/Alopezfu/ubuntu2Mac/master/download.png)
